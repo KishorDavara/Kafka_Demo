@@ -12,6 +12,7 @@ import java.util.Properties;
 public class ProducerDemo {
     private static final Logger logger = LoggerFactory.getLogger(ProducerDemo.class.getSimpleName());
     public static void main(String[] args) {
+        logger.info("::Kafka Producer::");
         //create producer properties
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"127.0.0.1:9092");
